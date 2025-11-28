@@ -1,14 +1,16 @@
+import 'package:flame/flame.dart';
+import 'package:flame_prototype_game/flame_prototype.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flame/game.dart';
 
 void main() {
-  runApp(GameWidget(game: FlameGame(world: MyWorld())));
+  WidgetsFlutterBinding.ensureInitialized();
+  Flame.device.fullScreen();
+  Flame.device.setLandscape();
+
+  FlamePrototype game = FlamePrototype();
+  runApp(GameWidget(game: kDebugMode ? FlamePrototype(): game));
 }
 
 
-class MyWorld extends World{
-  @override
-  Future<void>onLoad()async{
-    add(Player(position:Vector2(0, 0)))
-  }
-}
