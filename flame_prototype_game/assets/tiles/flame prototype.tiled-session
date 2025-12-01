@@ -12,12 +12,16 @@
             "scaleInDock": 1,
             "scaleInEditor": 1.5
         },
+        "Flame_Prototype_Tiles.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
         "Level-01.tmx": {
-            "scale": 1.5,
+            "scale": 0.75,
             "selectedLayer": 1,
             "viewCenter": {
-                "x": 267.99999999999994,
-                "y": 270.6666666666667
+                "x": 329.33333333333326,
+                "y": 359.33333333333337
             }
         }
     },
@@ -29,11 +33,13 @@
     "map.width": 40,
     "openFiles": [
         "Flame Prototype.tsx",
-        "Level-01.tmx"
+        "Level-01.tmx",
+        "Flame_Prototype_Tiles.tsx"
     ],
     "project": "flame prototype.tiled-project",
     "recentFiles": [
         "Flame Prototype.tsx",
+        "Flame_Prototype_Tiles.tsx",
         "Level-01.tmx"
     ],
     "tileset.lastUsedFormat": "tsx",
